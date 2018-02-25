@@ -1,0 +1,28 @@
+﻿<Window x:Class="HostelManagementSystem.UI.Views.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600" 
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="DashboardDatagrid" HorizontalAlignment="Left" Height="350" Margin="12,130,0,0" VerticalAlignment="Top" Width="570"/>
+        <Label Content="Sort By Name" HorizontalAlignment="Left" Margin="0,37,0,0" VerticalAlignment="Top" Width="93"/>
+        <ComboBox x:Name="ByName" HorizontalAlignment="Left" Margin="98,35,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Month" HorizontalAlignment="Left" Margin="230,35,0,0" VerticalAlignment="Top" Height="28"/>
+        <ComboBox x:Name="ByMonth" HorizontalAlignment="Left" Margin="283,35,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Year" HorizontalAlignment="Left" Margin="415,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.971,0.385"/>
+        <ComboBox x:Name="ByYear" HorizontalAlignment="Left" Margin="454,33,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Search" x:Name="Search" HorizontalAlignment="Left" Margin="487,81,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ManageMembers" Content="Manage Members" HorizontalAlignment="Left" Margin="178,494,0,0" VerticalAlignment="Top" Width="160" Height="40" Click="ManageMembers_Click"/>
+        <Button x:Name="CalculateMeal" Content="Calculate Meal" HorizontalAlignment="Left" Margin="12,494,0,0" VerticalAlignment="Top" Width="153" Height="40" Click="CalculateMeal_Click"/>
+    </Grid>
+</Window>

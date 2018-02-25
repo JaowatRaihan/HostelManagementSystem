@@ -1,0 +1,27 @@
+﻿<Window x:Class="HostelManagementSystem.UI.Views.ManageMembersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="600" Width="600" 
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label BorderBrush="AliceBlue" Content="ADD Members" HorizontalAlignment="Left" Margin="253,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.225,-0.154" Width="95" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <DataGrid x:Name="LoadAllMembers" SelectionUnit="FullRow" materialDesign:DataGridAssist.CellPadding="20" BorderBrush="AliceBlue" HorizontalAlignment="Left" Height="206" Margin="19,274,0,0" VerticalAlignment="Top" Width="563" CanUserAddRows="False"/>
+        <Label Content="All Members" HorizontalAlignment="Left" Margin="244,226,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="136,68,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="Name" Height="30" Margin="253,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="133,118,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="253,113,0,0" TextWrapping="Wrap" x:Name="Phone" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="AddMember" Content="Add" HorizontalAlignment="Left" Margin="430,168,0,0" VerticalAlignment="Top" Width="75" BorderBrush="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" Click="AddMember_Click"/>
+        <Button x:Name="Dashboard" Content="Dashboard" HorizontalAlignment="Left" Margin="29,513,0,0" VerticalAlignment="Top" Width="151" Height="46" Click="Dashboard_Click"/>
+        <Button x:Name="CalculateMeal" Content="Calculate meal" HorizontalAlignment="Left" Margin="185,513,0,0" VerticalAlignment="Top" Width="132" Height="46" Click="CalculateMeal_Click"/>
+    </Grid>
+</Window>

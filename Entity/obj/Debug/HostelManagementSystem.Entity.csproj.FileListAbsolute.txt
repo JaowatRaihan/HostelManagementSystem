@@ -1,0 +1,11 @@
+E:\HostelManagementSystem\Entity\bin\Debug\HostelManagementSystem.Entity.dll.config
+E:\HostelManagementSystem\Entity\bin\Debug\HostelManagementSystem.Entity.dll
+E:\HostelManagementSystem\Entity\bin\Debug\HostelManagementSystem.Entity.pdb
+E:\HostelManagementSystem\Entity\bin\Debug\EntityFramework.dll
+E:\HostelManagementSystem\Entity\bin\Debug\EntityFramework.SqlServer.dll
+E:\HostelManagementSystem\Entity\bin\Debug\EntityFramework.xml
+E:\HostelManagementSystem\Entity\bin\Debug\EntityFramework.SqlServer.xml
+E:\HostelManagementSystem\Entity\obj\Debug\HostelManagementSystem.Entity.csprojResolveAssemblyReference.cache
+E:\HostelManagementSystem\Entity\obj\Debug\HostelManagementSystem.Entity.csproj.CoreCompileInputs.cache
+E:\HostelManagementSystem\Entity\obj\Debug\HostelManagementSystem.Entity.dll
+E:\HostelManagementSystem\Entity\obj\Debug\HostelManagementSystem.Entity.pdb

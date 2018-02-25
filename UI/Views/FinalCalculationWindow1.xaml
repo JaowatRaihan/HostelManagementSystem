@@ -1,0 +1,32 @@
+﻿<Window x:Class="HostelManagementSystem.UI.Views.FinalCalculationWindow1"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="CalculateMealWindow"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="600" Width="600" 
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" WindowStartupLocation="CenterScreen"   
+        >
+    <Grid>
+        <Label x:Name="Month" Content="Meal Calculation For The Month:" HorizontalAlignment="Left" Margin="154,33,0,0" VerticalAlignment="Top" Width="251" Height="45" BorderBrush="Black" BorderThickness="2"/>
+
+        <Label Content="Total Bazar:" HorizontalAlignment="Left" Margin="39,99,0,0" VerticalAlignment="Top" Width="92" RenderTransformOrigin="0.457,1.231"/>
+        <Label x:Name="TotalBazar" HorizontalAlignment="Left" Margin="112,99,0,0" VerticalAlignment="Top" Width="92" RenderTransformOrigin="-0.475,-0.385" Height="24"/>
+
+        <Label Content="Meal Rate:" HorizontalAlignment="Left" Margin="46,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.985,2.06"/>
+        <Label x:Name="MealRate" HorizontalAlignment="Left" Margin="112,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.5" Height="26" Width="92"/>
+
+        <Label Content="Total Meal:" HorizontalAlignment="Left" Margin="407,99,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TotalMeal" HorizontalAlignment="Left" Margin="474,99,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.163,0.462" Width="92"/>
+
+        <DataGrid x:Name="Cart" HorizontalAlignment="Left" Height="268" Margin="10,230,0,0" VerticalAlignment="Top" Width="572" />
+
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="339,514,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.493,0.688" Click="Save_Click" />
+        <Button x:Name="ReCalculate" Content="Re-calculate" HorizontalAlignment="Left" Margin="449,514,0,0" VerticalAlignment="Top" Width="117" Click="ReCalculate_Click"/>
+    </Grid>
+</Window>
